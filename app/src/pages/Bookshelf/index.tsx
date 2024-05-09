@@ -40,7 +40,7 @@ export const Bookshelf = () => {
         <Tabs
           value={tabValue}
           indicatorColor="primary"
-          onChange={(_, newValue) => setTabValue(newValue)}
+          onChange={(_: unknown, newValue: number) => setTabValue(newValue)}
         >
           {labels.map(label => (
             <Tab key={label} label={label} />
